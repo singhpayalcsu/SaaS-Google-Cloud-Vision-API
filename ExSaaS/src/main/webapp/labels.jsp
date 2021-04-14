@@ -21,8 +21,8 @@
 
 	<table>
 		<tr>
-			<td align="center"><b style="color: red;"> Labels - A Saas
-					Exercise</b></td>
+			<td align="center"><b> Label Detection using Google cloud vision
+					</b></td>
 		</tr>
 		<tr>
 			<td><br></td>
@@ -46,7 +46,7 @@
 			List<EntityAnnotation> imageLabels = (List<EntityAnnotation>) request.getAttribute("imageLabels");
 		%>
 		<tr>
-			<td>Labels from Google Vision</td>
+			<td>Labels from Google Cloud Vision</td>
 			<td></td>
 			<td>
 				<table border="1">
