@@ -16,28 +16,13 @@
 <html>
 <head>
 <title>Labels</title>
-<style>
-b,th{
-  text-shadow: 2px 2px red;
-}
-table,th{
-width: 100%;
-  border-collapse: collapse;
-    border: 2px solid black;
-}
-
-</style>
 </head>
 <body>
-<body style="background-color:LightBlue;">
-</body>
-<center>
+
 	<table>
 		<tr>
-			<th align="center"><b style="color: black;"> Software as a Service - Cloud Vision API
-
- 
-		</b></th>
+			<td align="center"><b style="color: red;"> Labels - A Saas
+					Exercise</b></td>
 		</tr>
 		<tr>
 			<td><br></td>
@@ -47,9 +32,9 @@ width: 100%;
 
 	<table>
 		<tr>
-			<center>Image Uploaded </center>
-			
-			<center><img src="<%=request.getAttribute("imageUrl")%>" width=150px height=150px></center>
+			<td>Uploaded image</td>
+			<td></td>
+			<td><img src="<%=request.getAttribute("imageUrl")%>"></td>
 		</tr>
 		<tr>
 			<td><br></td>
@@ -61,10 +46,10 @@ width: 100%;
 			List<EntityAnnotation> imageLabels = (List<EntityAnnotation>) request.getAttribute("imageLabels");
 		%>
 		<tr>
-			<th> List of detected labels </th></tr>
-			<tr>
+			<td>Labels from Google Vision</td>
+			<td></td>
 			<td>
-				<table>
+				<table border="1">
 					<tr>
 						<td>Label</td>
 						<td>Score</td>
@@ -83,9 +68,9 @@ width: 100%;
 			</td>
 		</tr>
 		<tr>
-			<td><a href="/">Reset</</a></td>
+			<td><a href="/">Reset Image</</a></td>
 		</tr>
 	</table>
-</center>
+
 </body>
 </html>
